@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    android:background="@drawable/bg1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.nikhil.eatnjoy.fragment.AdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Admin Login"
+    android:gravity="center"
+    android:id="@+id/admin"
+    android:layout_marginTop="55dp"
+    android:textSize="50sp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#0bf2d0"
+    android:textStyle="italic"/>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="400dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="90dp">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="300dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editbg"
+                android:textColor="#05ecdd"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="30dp"
+                android:hint="Enter Username" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="400dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="90dp">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="300dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/editbg"
+                android:textColor="#05ecdd"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="30dp"
+                android:hint="Enter Password" />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/innerbutton"
+            android:text="log in"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

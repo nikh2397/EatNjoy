@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:layout_height="match_parent"
+    tools:context=".Reset">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="40sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="10sp"
+        android:text="Forgot Password?"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="#a7a4a4"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:textColorHint="#a7a4a4"
+            android:textColor="#000"
+            android:id="@+id/edt_reset_email"
+            android:hint="Enter your email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e917f297"
+        android:id="@+id/resetbtn"
+        android:clickable="true"
+        android:layout_margin="10dp"
+        android:text="Submit"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            app:showAsAction="ifRoom"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_perm_identity_black_24dp"
+
+            android:title="Admin" />
+        <item
+            android:id="@+id/food_orders"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Food Orders" />
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Accounts Settings" />
+
+        <item
+               android:title="Manage Payment Options"
+               android:icon="@drawable/ic_payment_black_24dp"
+               android:id="@+id/mangepaymentoptions">
+
+            </item>
+
+            <item  android:title="Complete Your Profile"
+                    android:icon="@drawable/ic_tag_faces_black_24dp"
+                android:id="@+id/profile">
+
+            </item>
+
+            <item android:id="@+id/signout"
+                android:icon="@drawable/signouticon"
+                android:title="Signout">
+
+            </item>
+            <item
+                android:id="@+id/developer"
+                android:icon="@drawable/ic_adb_black_24dp"
+                android:title="Developer" />
+    </group>
+
+</menu>
+
+
+
+
+<!--<item android:visible="true" android:id="@+id/m_area"-->
+<!--android:titleCondensed="Areas"-->
+<!--android:title="Areas"-->
+<!--android:icon="@drawable/restaur"-->
+<!--android:enabled="true">-->
+<!--<menu>-->
+    <!--<item android:id="@+id/item1" android:title="Placeholder"></item>-->
+<!--</menu>-->
+<!--</item>-->

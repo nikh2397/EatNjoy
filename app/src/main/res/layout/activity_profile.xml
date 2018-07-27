@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User Registration"
+            android:textSize="44sp"
+            android:textColor="#0bf2d0"
+            android:textStyle="italic|bold"
+            android:id="@+id/textView"
+            android:layout_marginTop="60sp"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:pointerIcon="cell"
+            android:layout_height="3sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30sp"
+            android:textColorHint="#000"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="match_parent" >
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="15dp"
+            android:textColorHint="#fa26f7fa"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+
+            android:hint="Enter your email"
+            android:background="@drawable/editbg"
+            android:inputType="textEmailAddress"
+            android:textColor="#ccc1c1"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColorHint="#000"
+            android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/editbg"
+            android:layout_margin="15dp"
+            android:textColor="#ccc1c1"
+            android:textColorHint="#fa26f7fa"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+             />
+        </android.support.design.widget.TextInputLayout>
+        <CheckBox
+
+            android:id="@+id/cbShowPwd"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/etPassword"
+
+            android:layout_below="@+id/etPassword"
+
+            android:text="Show Password" />
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/signupbg"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="SIGNUP"
+            />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_bg"
+            android:text="LOGIN WITH FACEBOOK"
+            android:textSize="15sp"
+            app:layout_constraintVertical_bias="0.898" />
+
+      <com.google.android.gms.common.SignInButton
+          android:layout_width="300dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="18dp"
+          android:id="@+id/google"
+          android:layout_height="wrap_content">
+
+      </com.google.android.gms.common.SignInButton>
+
+        <TextView
+            android:text="Already Registered? Click here for Login"
+            android:textColor="#e2ed04"
+            android:textStyle="bold"
+            android:id="@+id/textViewSignin"
+            android:textAlignment="center"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

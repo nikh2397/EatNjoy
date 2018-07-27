@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.nikhil.eatnjoy.fragment.Main">
+
+
+    <LinearLayout
+        android:id="@+id/progresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center_horizontal|center_vertical">
+
+        <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:mlpb_arrow_height="5dp"
+            app:mlpb_arrow_width="10dp"
+            app:mlpb_progress_stoke_width="4dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/location"
+        android:paddingTop="7sp"
+        android:textStyle="italic|bold"
+        android:textSize="20dp"
+        android:background="#b0dad1d1"
+        android:textColor="#e0544b4b"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/view"
+        android:pointerIcon="cell"
+        android:layout_height="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
